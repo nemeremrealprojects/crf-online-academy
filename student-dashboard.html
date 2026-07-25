@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Dashboard | CRF Online Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header dashboard-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CRF</span>
+        <span>Student Portal</span>
+      </a>
+      <button class="btn btn-secondary" id="logout-btn">Log out</button>
+    </header>
+
+    <main class="dashboard-shell reveal">
+      <section class="dashboard-intro">
+        <div>
+          <p class="eyebrow">Student dashboard</p>
+          <h1 id="student-welcome">Welcome back</h1>
+          <p>Track your class progress and make secure lesson payments here.</p>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card">
+          <h3>Enrolled course</h3>
+          <p id="enrolled-course">Primary 1 English</p>
+        </article>
+        <article class="stat-card">
+          <h3>Payment status</h3>
+          <p id="payment-status">Pending</p>
+        </article>
+        <article class="stat-card">
+          <h3>Weekly learning streak</h3>
+          <p id="streak-count">5 days</p>
+        </article>
+      </section>
+
+      <section class="dashboard-panels">
+        <article class="panel">
+          <h2>Current lessons</h2>
+          <ul id="lesson-list" class="panel-list"></ul>
+        </article>
+        <article class="panel">
+          <h2>Make a payment</h2>
+          <p>All courses are ₦3,000 each. Secure payments are processed through Paystack.</p>
+          <button class="btn btn-primary pay-now" data-course="Primary 1 English">Pay now</button>
+        </article>
+      </section>
+      <div id="dashboard-message" class="form-message"></div>
+    </main>
+  </body>
+</html>

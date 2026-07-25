@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Craddle Reading Foundation Online Academy</title>
+    <meta
+      name="description"
+      content="Craddle Reading Foundation Online Academy offers vibrant online English lessons for kindergarten to primary six students."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CRF</span>
+        <span>Craddle Reading Foundation Online Academy</span>
+      </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" id="site-nav">
+        <a href="#courses">Courses</a>
+        <a href="#summer">Summer Lessons</a>
+        <a href="#kindergarten">Kindergarten</a>
+        <a href="login.html" class="nav-cta">Login</a>
+        <a href="register.html" class="nav-cta alt">Register</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero reveal">
+        <div class="hero-content">
+          <p class="eyebrow">Bright futures start with confident readers</p>
+          <h1>Learn English with joy, structure, and expert guidance.</h1>
+          <p>
+            From summer lessons to primary school mastery, CRF Online Academy offers
+            engaging weekly classes for every stage of your child’s learning journey.
+          </p>
+          <div class="hero-actions">
+            <a href="register.html" class="btn btn-primary">Enroll Today</a>
+            <a href="#courses" class="btn btn-secondary">Explore Classes</a>
+          </div>
+          <ul class="hero-highlights">
+            <li>Live interactive sessions</li>
+            <li>Weekly assessments</li>
+            <li>Student-friendly progress tracking</li>
+          </ul>
+        </div>
+        <div class="hero-media">
+          <img
+            src="https://images.unsplash.com/photo-1516627145497-ae6968895b74?auto=format&fit=crop&w=900&q=80"
+            alt="Young pupils learning in a bright classroom"
+          />
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="section-header">
+          <p class="eyebrow">Why families choose CRF</p>
+          <h2>More than lessons — a complete reading and language experience</h2>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Professional teaching</h3>
+            <p>Carefully designed class plans help children build confidence quickly.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Flexible learning</h3>
+            <p>Join from home, school, or on the go with a simple digital experience.</p>
+          </article>
+          <article class="feature-card">
+            <h3>Tracked progress</h3>
+            <p>Parents and learners receive timely updates and clear growth milestones.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal" id="summer">
+        <div class="section-header">
+          <p class="eyebrow">Seasonal highlight</p>
+          <h2>Summer Lesson</h2>
+        </div>
+        <div class="summer-grid">
+          <div class="summer-card">
+            <h3>Vocabulary adventure</h3>
+            <p>Fun stories, enrichment activities, and speaking practice to keep learning alive during the holidays.</p>
+          </div>
+          <div class="summer-card accent">
+            <h3>Reading confidence boost</h3>
+            <p>Strengthen comprehension and communication skills before the new school term begins.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal" id="kindergarten">
+        <div class="section-header">
+          <p class="eyebrow">Early learners</p>
+          <h2>Kindergarten English</h2>
+        </div>
+        <div class="kindergarten-layout">
+          <div>
+            <p>
+              Our kindergarten classes focus on basic vocabulary, phonics, listening, and joyful oral English practice.
+            </p>
+            <ul class="bullet-list">
+              <li>Interactive songs and stories</li>
+              <li>Letter and sound recognition</li>
+              <li>Simple classroom communication</li>
+            </ul>
+          </div>
+          <img
+            src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80"
+            alt="Happy kindergarten students learning together"
+          />
+        </div>
+      </section>
+
+      <section class="section reveal" id="courses">
+        <div class="section-header">
+          <p class="eyebrow">Our classes</p>
+          <h2>Primary 1 to Primary 6 English Language</h2>
+        </div>
+        <div class="course-grid">
+          <article class="course-card">
+            <h3>Primary 1 English</h3>
+            <p>English Language only</p>
+            <div class="price">₦3,000</div>
+            <a href="register.html" class="btn btn-primary enroll-btn">Enroll now</a>
+          </article>
+          <article class="course-card">
+            <h3>Primary 2 English</h3>
+            <p>English Language only</p>
+            <div class="price">₦3,000</div>
+            <a href="register.html" class="btn btn-primary enroll-btn">Enroll now</a>
+          </article>
+          <article class="course-card">
+            <h3>Primary 3 English</h3>
+            <p>English Language only</p>
+            <div class="price">₦3,000</div>
+            <a href="register.html" class="btn btn-primary enroll-btn">Enroll now</a>
+          </article>
+          <article class="course-card">
+            <h3>Primary 4 English</h3>
+            <p>English Language only</p>
+            <div class="price">₦3,000</div>
+            <a href="register.html" class="btn btn-primary enroll-btn">Enroll now</a>
+          </article>
+          <article class="course-card">
+            <h3>Primary 5 English</h3>
+            <p>English Language only</p>
+            <div class="price">₦3,000</div>
+            <a href="register.html" class="btn btn-primary enroll-btn">Enroll now</a>
+          </article>
+          <article class="course-card">
+            <h3>Primary 6 English</h3>
+            <p>English Language only</p>
+            <div class="price">₦3,000</div>
+            <a href="register.html" class="btn btn-primary enroll-btn">Enroll now</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section reveal cta-banner">
+        <div>
+          <p class="eyebrow">Ready to begin?</p>
+          <h2>Join a community where reading growth feels exciting and manageable.</h2>
+        </div>
+        <a href="register.html" class="btn btn-primary">Create account</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Craddle Reading Foundation Online Academy</p>
+    </footer>
+  </body>
+</html>

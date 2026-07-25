@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | CRF Online Academy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+    <script src="firebase-config.js"></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body class="auth-page">
+    <header class="site-header auth-header">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">CRF</span>
+        <span>Craddle Reading Foundation Online Academy</span>
+      </a>
+    </header>
+
+    <main class="auth-shell">
+      <section class="auth-card reveal">
+        <p class="eyebrow">Welcome back</p>
+        <h1>Login to your account</h1>
+        <p class="auth-subtitle">Access lessons, track progress, and manage your enrollments.</p>
+        <form id="login-form" class="auth-form">
+          <label>
+            Email address
+            <input type="email" id="login-email" required />
+          </label>
+          <label>
+            Password
+            <input type="password" id="login-password" required />
+          </label>
+          <button type="submit" class="btn btn-primary full-width">Sign in</button>
+        </form>
+        <div id="form-message" class="form-message" aria-live="polite"></div>
+        <p class="auth-link">
+          New here?
+          <a href="register.html">Create an account</a>
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
