@@ -3,12 +3,12 @@ import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-aut
 import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
-  apiKey: "YOUR_API_KEY",
-    authDomain: "YOUR_PROJECT.firebaseapp.com",
-      projectId: "YOUR_PROJECT_ID",
-        storageBucket: "YOUR_PROJECT.appspot.com",
-          messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-            appId: "YOUR_APP_ID"
+  apiKey: "AIzaSyCsQmK5JqmH-5tUj5p_eyrJZUXGt61BEWo",
+    authDomain: "craddle-reading-foundati-a04fe.firebaseapp.com",
+      projectId: "craddle-reading-foundati-a04fe",
+        storageBucket: "craddle-reading-foundati-a04fe.firebasestorage.app",
+          messagingSenderId: "864743637592",
+            appId: "1:864743637592:web:49bec9e8f40e6b9673402d"
             };
 
             const app = initializeApp(firebaseConfig);
