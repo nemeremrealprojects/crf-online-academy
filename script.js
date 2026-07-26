@@ -197,11 +197,11 @@ const siteNav = document.querySelector(".site-nav");
 
 if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
-    siteNav.classList.toggle("active");
+    siteNav.classList.toggle("open");
 
     menuToggle.setAttribute(
       "aria-expanded",
-      siteNav.classList.contains("active")
+      siteNav.classList.contains("open")
     );
   });
 }
@@ -249,7 +249,7 @@ const navLinks = document.querySelectorAll(".site-nav a");
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     if (siteNav) {
-      siteNav.classList.remove("active");
+      siteNav.classList.remove("open");
     }
 
     if (menuToggle) {
