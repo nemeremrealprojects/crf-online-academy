@@ -1,3 +1,4 @@
+console.log("script.js loaded");
 import { auth, db } from "./firebase-config.js";
 
 import {
@@ -194,9 +195,11 @@ if (logoutBtn) {
 
 const menuToggle = document.querySelector(".menu-toggle");
 const siteNav = document.querySelector(".site-nav");
-
+console.log("Hamburger code reached");
 if (menuToggle && siteNav) {
   menuToggle.addEventListener("click", () => {
+    console.log("Hamburger clicked");
+
     siteNav.classList.toggle("open");
 
     menuToggle.setAttribute(
